@@ -14,5 +14,7 @@ public class TestaGerente {
 		boolean podeAcessar = tatianeGerente.autentica(1234);
 		System.out.println("Acesso permitido? " + podeAcessar);
 		
+		System.err.println(tatianeGerente.getBonificacao());
+		
 	}
 }
