@@ -1,6 +1,6 @@
 package bytebank;
 
-public class Gerente extends Funcionario{
+public class EditorDeVideo extends Funcionario{
 	private int senha;
 	
 	public void setSenha(int senha) {
@@ -16,7 +16,7 @@ public class Gerente extends Funcionario{
 	}
 	
 	public double getBonificacao() {
-		System.out.println("Rodou método bonificação da classe Gerente");
-		return super.getBonificacao() + super.getSalario();
+		System.out.println("Rodou método bonificação da classe Editor de Video");
+		return 200;
 	}
 }

@@ -7,6 +7,7 @@ public class Funcionario {
 	
 	
 	public double getBonificacao() {
+		System.out.println("Rodou método bonificação da classe Funcionario");
 		return this.salario * 0.1;
 	}
 	public String getNome() {
