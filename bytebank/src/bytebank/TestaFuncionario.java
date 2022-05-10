@@ -2,7 +2,7 @@ package bytebank;
 
 public class TestaFuncionario {
 	public static void main(String[] args) {
-		Funcionario tatiane = new Funcionario();
+		Funcionario tatiane = new Diretor();
 		
 		tatiane.setNome("Tatiane");
 		tatiane.setCpf("1234654");
