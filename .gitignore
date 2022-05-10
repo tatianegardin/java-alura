@@ -1,4 +1,10 @@
 .metadata/
+bytebank/bin
 bytebank/.classpath
 bytebank/.project
 bytebank/.settings/org.eclipse.jdt.core.prefs
+bytebank-herdado-conta/.classpath
+bytebank-herdado-conta/.project
+bytebank-herdado-conta/.settings/org.eclipse.jdt.core.prefs
+bytebank-herdado-conta/bin
+
