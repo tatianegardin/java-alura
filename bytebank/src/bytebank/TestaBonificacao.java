@@ -12,12 +12,11 @@ public class TestaBonificacao {
 		EditorDeVideo e = new EditorDeVideo();
 		e.setSalario(2000);
 		
-		Funcionario f = new Funcionario();
-		f.setSalario(2000);
+
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		
-		controle.somaBonificacao(f);
+
 		controle.somaBonificacao(g);
 		controle.somaBonificacao(d);
 		controle.somaBonificacao(e);
