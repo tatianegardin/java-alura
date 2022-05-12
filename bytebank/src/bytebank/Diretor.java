@@ -1,18 +1,21 @@
 package bytebank;
 
 public class Diretor extends Funcionario implements Autentica{
-	private int senha;
+	private AutenticadorUtil autentica;
 	
-	public void setSenha(int senha) {
-		this.senha = senha;
+	public Diretor() {
+		this.autentica = new AutenticadorUtil(); 
 	}
 	
+	@Override
+	public void setSenha(int senha) {
+		autentica.setSenha(senha);
+		
+	}
+	
+	@Override
 	public boolean autentica(int senha) {
-		if(senha == this.senha) {
-			return true;
-		}else {
-			return false;
-		}
+		return autentica.autentica(senha);
 	}
 	
 	public double getBonificacao() {
