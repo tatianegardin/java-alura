@@ -9,7 +9,7 @@ public abstract class Conta {
 	
 	public Conta(int agencia, int numero) {
 		
-		if (agencia <= 0 || numero <= 0) {
+		if (agencia <= 0  || numero <= 0) {
 			System.out.println("Conta não criada"); ;
 		}else {
 			this.agencia = agencia;

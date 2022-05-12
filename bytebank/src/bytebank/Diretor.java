@@ -1,6 +1,6 @@
 package bytebank;
 
-public class Diretor extends Funcionario{
+public class Diretor extends Funcionario implements Autentica{
 	private int senha;
 	
 	public void setSenha(int senha) {
