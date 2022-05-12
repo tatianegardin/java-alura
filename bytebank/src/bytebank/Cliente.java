@@ -1,17 +1,11 @@
 package bytebank;
 
-public class Gerente extends Funcionario implements Autentica{
+public class Cliente implements Autentica{
 	private int senha;
-	
-
-	public double getBonificacao() {
-		System.out.println("Rodou método bonificação da classe Gerente");
-		return super.getSalario();
-	}
 
 	@Override
 	public void setSenha(int senha) {
-		this.senha = senha;
+	this.senha = senha;
 		
 	}
 
