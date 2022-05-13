@@ -1,21 +1,20 @@
 package bytebank;
 
 public class Cliente implements Autentica{
-	private int senha;
-
-	@Override
-	public void setSenha(int senha) {
-	this.senha = senha;
-		
-	}
-
-	@Override
-	public boolean autentica(int senha) {
-		if(senha == this.senha) {
-			return true;
-		}else {
-			return false;
-		}
+	private AutenticadorUtil autentica;
+	
+	public Cliente() {
+		this.autentica = new AutenticadorUtil(); 
 	}
 	
+	@Override
+	public void setSenha(int senha) {
+		autentica.setSenha(senha);
+		
+	}
+	
+	@Override
+	public boolean autentica(int senha) {
+		return autentica.autentica(senha);
+	}
 }
