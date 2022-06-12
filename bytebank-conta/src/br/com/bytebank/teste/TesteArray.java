@@ -37,6 +37,14 @@ public class TesteArray {
 
         }
 
+        //Array literal
+
+        int[] arrayLiteral = {1,2,3,4,5};
+
+        for (int i = 0; i< arrayLiteral.length; i++){
+            System.out.println("Array Literal: " + arrayLiteral[i]);
+        }
+
 
     }
 }
