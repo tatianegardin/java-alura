@@ -1,5 +1,6 @@
 package br.com.bytebank.teste;
 
+import br.com.bytebank.modelo.Conta;
 import br.com.bytebank.modelo.ContaCorrente;
 
 public class TesteArray {
@@ -20,7 +21,7 @@ public class TesteArray {
 
         // Array com referencias
 
-        ContaCorrente[] contas = new ContaCorrente[5];
+        Conta[] contas = new Conta[5];
 
         ContaCorrente c1 = new ContaCorrente(11,22);
         ContaCorrente c2 = new ContaCorrente(23,24);
@@ -30,6 +31,8 @@ public class TesteArray {
         contas[2] = c2;
         contas[3] = c1;
         contas[4] = new ContaCorrente(123,123);
+
+
 
         for (int i = 0 ; i < contas.length; i++){
             System.out.println();
@@ -45,6 +48,13 @@ public class TesteArray {
             System.out.println("Array Literal: " + arrayLiteral[i]);
         }
 
+        for (int i = 0 ; i < args.length; i++){
+            if(args[i] == "1"){
+                System.out.println("Te vira negão");
+            }else{
+                System.out.println("não rolou");
+            }
+        }
 
     }
 }
