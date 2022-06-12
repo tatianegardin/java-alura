@@ -1,4 +1,4 @@
-package bytebank.modelos;
+package bytebank;
 
 public abstract class Funcionario {
 	private String nome;

@@ -1,4 +1,4 @@
-package bytebank.modelos;
+package bytebank;
 
 public class AutenticadorUtil {
 	private int senha;

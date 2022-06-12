@@ -1,4 +1,4 @@
-package bytebank.modelos;
+package bytebank;
 
 public interface Autentica {
 	public void setSenha(int senha);
