@@ -1,9 +1,4 @@
-package bytebank.teste;
-
-import bytebank.modelos.ControleBonificacao;
-import bytebank.modelos.Diretor;
-import bytebank.modelos.EditorDeVideo;
-import bytebank.modelos.Gerente;
+package bytebank;
 
 public class TestaBonificacao {
 

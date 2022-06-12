@@ -1,7 +1,4 @@
-package bytebank.teste;
-
-import bytebank.modelos.Diretor;
-import bytebank.modelos.Funcionario;
+package bytebank;
 
 public class TestaFuncionario {
 	public static void main(String[] args) {
