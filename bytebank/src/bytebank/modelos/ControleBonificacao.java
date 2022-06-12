@@ -1,4 +1,4 @@
-package bytebank;
+package bytebank.modelos;
 
 public class ControleBonificacao {
 	private int totalBonificacaoPaga ;

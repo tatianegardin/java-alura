@@ -1,9 +1,9 @@
-package bytebank;
+package bytebank.modelos;
 
-public class Gerente extends Funcionario implements Autentica{
+public class Cliente implements Autentica{
 	private AutenticadorUtil autentica;
 	
-	public Gerente() {
+	public Cliente() {
 		this.autentica = new AutenticadorUtil(); 
 	}
 	
@@ -17,10 +17,4 @@ public class Gerente extends Funcionario implements Autentica{
 	public boolean autentica(int senha) {
 		return autentica.autentica(senha);
 	}
-	
-	public double getBonificacao() {
-		System.out.println("Rodou método bonificação da classe Gerente");
-		return super.getSalario();
-	}
-	
 }

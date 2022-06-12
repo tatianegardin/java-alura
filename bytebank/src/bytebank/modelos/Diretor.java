@@ -1,4 +1,4 @@
-package bytebank;
+package bytebank.modelos;
 
 public class Diretor extends Funcionario implements Autentica{
 	private AutenticadorUtil autentica;
@@ -19,7 +19,7 @@ public class Diretor extends Funcionario implements Autentica{
 	}
 	
 	public double getBonificacao() {
-		System.out.println("Rodou método bonificação da classe Diretor");
+		System.out.println("Rodou mï¿½todo bonificaï¿½ï¿½o da classe Diretor");
 		return super.getSalario() *2;
 	}
 }

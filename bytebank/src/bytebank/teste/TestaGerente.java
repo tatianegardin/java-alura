@@ -1,4 +1,6 @@
-package bytebank;
+package bytebank.teste;
+
+import bytebank.modelos.Gerente;
 
 public class TestaGerente {
 	public static void main(String[] args) {

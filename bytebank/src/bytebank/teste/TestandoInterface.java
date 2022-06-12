@@ -1,4 +1,9 @@
-package bytebank;
+package bytebank.teste;
+
+import bytebank.modelos.SistemaInterno;
+import bytebank.modelos.Cliente;
+import bytebank.modelos.Diretor;
+import bytebank.modelos.Gerente;
 
 public class TestandoInterface {
 
