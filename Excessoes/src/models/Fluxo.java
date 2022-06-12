@@ -1,3 +1,9 @@
+package models;
+
+/**
+ * @author Tatiane Gardin
+ *
+ */
 public class Fluxo {
     public static void main(String[] args) {
         System.out.println("Start - main");
@@ -8,7 +14,6 @@ public class Fluxo {
         }
         System.out.println("End - main");
 
-        Conta conta = new Conta();
 
     }
 

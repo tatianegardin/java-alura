@@ -19,7 +19,7 @@ public class Diretor extends Funcionario implements Autentica{
 	}
 	
 	public double getBonificacao() {
-		System.out.println("Rodou m�todo bonifica��o da classe Diretor");
+		System.out.println("Rodou método bonificação da classe Diretor");
 		return super.getSalario() *2;
 	}
 }

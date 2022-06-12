@@ -1,3 +1,4 @@
+package br.com.bytebank.modelo;
 
 public abstract class Conta {
 	private double saldo;
@@ -10,7 +11,7 @@ public abstract class Conta {
 	public Conta(int agencia, int numero) {
 		
 		if (agencia <= 0  || numero <= 0) {
-			System.out.println("Conta não criada"); ;
+			System.out.println("Conta nï¿½o criada"); ;
 		}else {
 			this.agencia = agencia;
 			this.numero = numero;

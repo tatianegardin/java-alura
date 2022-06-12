@@ -19,7 +19,7 @@
 //        for (int i = 0; i <=5 ; i++){
 //            System.out.println(i);
 //            //int teste = 10/0;
-//            Conta c= null;
+//            models.Conta c= new models.Conta();
 //            c.deposita();
 //        }
 //        System.out.println("End - Método 2");
