@@ -32,7 +32,7 @@ public class TesteArrayList {
             System.out.println();
         }
 
-
+for
 
     }
 }
