@@ -49,20 +49,18 @@ public class TesteComparatorString {
 
         System.out.println("-----------------");
 
-        lista.sort(new CompararString());
-        
+        lista.sort(new Comparator<Conta>() {
+
+            @Override
+            public int compare(Conta c1, Conta c2) {
+                String clienteConta1 = c1.getTitular().getNome();
+                String clienteConta2 = c2.getTitular().getNome();
+                return clienteConta1.compareTo(clienteConta2);
+            }
+        });
+
         for(Conta conta : lista ){
             System.out.println(conta + " Nome: " + conta.getTitular().getNome());
-        }
-    }
-
-    static class CompararString implements Comparator<Conta> {
-
-        @Override
-        public int compare(Conta c1, Conta c2) {
-            String clienteConta1 = c1.getTitular().getNome();
-            String clienteConta2 = c2.getTitular().getNome();
-            return clienteConta1.compareTo(clienteConta2);
         }
     }
 }
