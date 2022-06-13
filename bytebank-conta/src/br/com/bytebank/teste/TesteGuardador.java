@@ -23,7 +23,13 @@ public class TesteGuardador {
     lista.adiciona(cc2);
 
     System.out.println(lista.getQuantidade());
-    
+
+    lista.getReferencia(0);
+
+    Conta refConta = (Conta)lista.getReferencia(1);
+    System.out.println(refConta.getNumero());
+
+
     }
 
 

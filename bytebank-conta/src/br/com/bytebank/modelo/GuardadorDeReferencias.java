@@ -17,4 +17,8 @@ public class GuardadorDeReferencias {
     public int getQuantidade() {
         return this.posicaoLivre;
     }
+
+    public Object getReferencia(int pos) {
+        return this.ref[pos];
+    }
 }
