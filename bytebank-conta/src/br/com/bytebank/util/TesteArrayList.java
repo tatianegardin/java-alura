@@ -32,7 +32,12 @@ public class TesteArrayList {
             System.out.println();
         }
 
-for
+
+        //Comparando se a conta já existe (Foi sobreescrito o equals na classe conta)
+
+        Conta cc3 =  new ContaCorrente(11,22);
+        System.out.println("A conta já existe? " + lista.contains(cc3));
+        
 
     }
 }
