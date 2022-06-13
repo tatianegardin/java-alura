@@ -26,4 +26,8 @@ public class Cliente {
 			this.profissao = profissao;
 		}
 
+	@Override
+	public String toString() {
+		return "Nome: " + this.nome;
+	}
 }
