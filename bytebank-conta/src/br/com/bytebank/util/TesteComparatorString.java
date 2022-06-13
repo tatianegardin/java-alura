@@ -1,4 +1,4 @@
-package br.com.bytebank.teste;
+package br.com.bytebank.util;
 
 import br.com.bytebank.modelo.Cliente;
 import br.com.bytebank.modelo.Conta;
@@ -56,14 +56,14 @@ public class TesteComparatorString {
         }
     }
 
-}
+    static class CompararString implements Comparator<Conta> {
 
-class CompararString implements Comparator<Conta> {
-
-    @Override
-    public int compare(Conta c1, Conta c2) {
-        String clienteConta1 = c1.getTitular().getNome();
-        String clienteConta2 = c2.getTitular().getNome();
-        return clienteConta1.compareTo(clienteConta2);
+        @Override
+        public int compare(Conta c1, Conta c2) {
+            String clienteConta1 = c1.getTitular().getNome();
+            String clienteConta2 = c2.getTitular().getNome();
+            return clienteConta1.compareTo(clienteConta2);
+        }
     }
 }
+

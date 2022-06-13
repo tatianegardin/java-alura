@@ -1,4 +1,4 @@
-package br.com.bytebank.teste;
+package br.com.bytebank.util;
 
 import br.com.bytebank.modelo.Cliente;
 import br.com.bytebank.modelo.Conta;
@@ -6,11 +6,10 @@ import br.com.bytebank.modelo.ContaCorrente;
 import br.com.bytebank.modelo.ContaPoupanca;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collections;
 import java.util.List;
 
-public class TesteComparator {
-
+public class TesteOrdemNatural {
     public static void main(String[] args) {
         Conta cc1 = new ContaCorrente(22, 33);
         Cliente clienteCC1 = new Cliente();
@@ -43,34 +42,16 @@ public class TesteComparator {
         lista.add(cc3);
         lista.add(cc4);
 
-        for(Conta conta : lista ){
+        for(Conta conta : lista){
             System.out.println(conta);
         }
 
+        System.out.println("----------------------------------");
 
-        System.out.println("-----------------");
-        ComparadorDeNumero compara = new ComparadorDeNumero();
+        Collections.sort(lista);
 
-        lista.sort(compara);
-        for(Conta conta : lista ){
+        for(Conta conta : lista){
             System.out.println(conta);
         }
-
-
-    }
-
-}
-
-class ComparadorDeNumero implements Comparator<Conta>{
-
-    @Override
-    public int compare(Conta c1, Conta c2) {
-        if(c1.getNumero() < c2.getNumero()){
-            return -1;
-        }
-        if(c1.getNumero() > c2.getNumero()){
-            return 1;
-        }
-        return 0;
     }
 }
