@@ -48,9 +48,9 @@ public class TesteComparatorString {
 
 
         System.out.println("-----------------");
-        CompararString compara = new CompararString();
 
-        lista.sort(compara);
+        lista.sort(new CompararString());
+        
         for(Conta conta : lista ){
             System.out.println(conta + " Nome: " + conta.getTitular().getNome());
         }
