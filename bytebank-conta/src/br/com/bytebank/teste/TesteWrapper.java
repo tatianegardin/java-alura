@@ -19,6 +19,12 @@ public class TesteWrapper {
         for(Number obj : listaDeNumeros){
             System.out.println(obj);
         }
+
+        //Constantes
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Double.BYTES);
+        System.out.println(Float.SIZE);
     }
 
 
