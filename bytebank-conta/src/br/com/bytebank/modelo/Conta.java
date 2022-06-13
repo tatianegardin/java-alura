@@ -73,7 +73,7 @@ public abstract class Conta {
 
 	@Override
 	public String toString() {
-		return "Agencia: " + this.getAgencia() +"\n"+ "Numero: "+  this.getAgencia();
+		return "Agencia: " + this.getAgencia() +" "+ "Numero: "+  this.getNumero();
 	}
 
 	@Override
