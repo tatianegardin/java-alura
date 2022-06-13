@@ -9,11 +9,13 @@ import java.util.ArrayList;
 
 public class TesteArrayList {
     public static void main(String[] args) {
-        ArrayList lista = new ArrayList();
+
+        //Generics
+        ArrayList<Conta> lista = new ArrayList<Conta>();
 
         Cliente cliente = new Cliente();
         cliente.setNome("Tati");
-        lista.add(cliente);
+        System.out.println(cliente);
 
         Conta cc = new ContaCorrente(11,22);
 
@@ -25,9 +27,10 @@ public class TesteArrayList {
         lista.add(cp);
         lista.add(cc2);
 
-        Conta conta = (Conta)lista.get(2);
-
-        System.out.println(  conta.toString());
+        for (Object ref: lista) {
+            System.out.println(ref);
+            System.out.println();
+        }
 
 
 
